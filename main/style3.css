@@ -1,0 +1,243 @@
+@media (max-width: 959.98px) {
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: rgb(211, 211, 211);
+        background-image: url(fon.jpg);
+        font-weight: bold;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0.5em auto;
+        padding-bottom: 0.3em;
+    }
+
+    header {
+        height: 150px;
+        background-color: rgb(112, 128, 144);
+        border-width: thick;
+        border-style: double;
+        border-color: grey;
+    }
+    
+    .shapka {
+        width: 100%;
+        height: 155px;
+        max-width: 960px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px auto;
+    }
+    
+    .shapka p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    
+    .shapka img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+
+    .nav, .hyperlinks, .table, .form, .footer {
+        background-color: rgb(112, 128, 144);
+        padding: 0.5em;
+    }
+
+    .nav {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .navlink{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0.1em auto;
+        padding: 0 5px;
+        width: fit-content;
+        height: 55px;
+    }
+
+    .navlink a{
+        vertical-align: middle;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+    }
+
+    li {
+        margin-bottom: 0.6em;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: large;
+    }
+
+    input, select, textarea {
+        font-size:20px;
+        size: 10em;
+        padding: 5px 10px 5px 10px;
+        margin-bottom: 1    em;
+    }   
+
+    #main .table {
+        order: 1;
+    }
+
+    #main .form {
+        order: 0;
+    }
+
+    b {
+        font-size: 28px;
+    }
+
+    .table {    
+        background-color: rgb(112, 128, 144);
+        padding: 0px 5px 5px;
+        border-width: thick;
+        border-style: double;
+        border-color: grey;
+        border-image: initial;
+    }
+
+    th, .nech td{
+        color: rgb(211, 211, 211);
+        background-color: grey;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: rgb(211, 211, 211);
+        background-image: url(fon.jpg);
+        background-attachment: fixed;
+        font-weight: bold;
+    }
+
+    .container {
+        width: 960px;
+        margin: 0.5em auto;
+        padding-bottom: 0.1em;
+    }
+
+    header {
+        height: 150px;
+        background-color: rgb(112, 128, 144);
+        border-width: thick;
+        border-style: double;
+        border-color: grey;
+    }
+    
+    .shapka {
+        width: 100%;
+        height: 155px;
+        max-width: 960px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px auto;
+    }
+    
+    .shapka p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    
+    .shapka img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+
+    .nav, .hyperlinks, .table, .form, .footer {
+        background-color: rgb(112, 128, 144);
+        padding: 0.2em;
+    }
+
+    .nav {
+        flex-direction: row;
+        display: flex;
+    }
+
+    .navlink{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0.1em auto;
+        padding: 0 5px;
+        width: fit-content;
+        height: 100px;
+    }
+
+    .navlink a{
+        vertical-align: middle;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav a{
+        margin-right: 1em;
+    }
+
+    b {
+        font-size: 36px;
+    }
+
+    .table {
+        background-color: rgb(112, 128, 144);
+        padding: 0px 5px 5px;
+        border-width: thick;
+        border-style: double;
+        border-color: grey;
+        border-image: initial;
+    }
+
+    th, .nech td{
+        color: rgb(211, 211, 211);
+        background-color: grey;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }   
+    
+    footer {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(112, 128, 144);
+    }
+}
