@@ -4,6 +4,7 @@
         font-size: 20px;
         color: rgb(211, 211, 211);
         background-image: url(fon.jpg);
+        background-attachment: fixed;
         font-weight: bold;
     }
 
@@ -108,18 +109,21 @@
         font-size: 28px;
     }
 
-    .table {    
-        background-color: rgb(112, 128, 144);
-        padding: 0px 5px 5px;
-        border-width: thick;
-        border-style: double;
-        border-color: grey;
-        border-image: initial;
+    table {
+        color: black;
+        background-color: white;
+        border: 1px solid;
+        border-collapse: collapse;
     }
 
-    th, .nech td{
-        color: rgb(211, 211, 211);
-        background-color: grey;
+    td{
+        border: 3px solid gray;
+        padding: 3px 5px 3px 5px;
+        text-align: center;
+    }
+
+    .nech {
+        background-color: rgb(238, 194, 156);
     }
 
     a {
@@ -215,18 +219,21 @@
         font-size: 36px;
     }
 
-    .table {
-        background-color: rgb(112, 128, 144);
-        padding: 0px 5px 5px;
-        border-width: thick;
-        border-style: double;
-        border-color: grey;
-        border-image: initial;
+    table {
+        color: black;
+        background-color: white;
+        border: 1px solid;
+        border-collapse: collapse;
     }
 
-    th, .nech td{
-        color: rgb(211, 211, 211);
-        background-color: grey;
+    td{
+        border: 3px solid gray;
+        padding: 3px 5px 3px 5px;
+        text-align: center;
+    }
+
+    .nech {
+        background-color: rgb(238, 194, 156);
     }
 
     a {
