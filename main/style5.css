@@ -41,3 +41,13 @@ form{
     flex-direction: row;
     background: linear-gradient(to top left, powderblue, pink);
 }
+@media screen and (max-width: 523px) {
+    #price{
+        width: 100px;
+        font-size: 12px;
+    }
+    #quantity{
+        width: 100px;
+        font-size: 12px;
+    }
+}
