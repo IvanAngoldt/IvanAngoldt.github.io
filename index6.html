@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <script src="main/task6.js" defer></script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Angoldt</title>
+      <link rel="stylesheet" href="main/style6.css">
+  </head>
+  <body>
+    <form>
+      <span>Введите кол-во видеокарт:</span>
+      <div class = "field">
+        <input name = "field" id="field" type="text">
+      </div>
+      <select name = "priceRate">
+        <option value="1">RTX 3060</option>
+        <option value="2">RTX 3070</option>
+        <option value="3">RTX 3090</option>
+      </select>
+      <div id="optionPrice">
+        <span>Сколько винтов</span>
+        <label><input type="radio" name="optionPrice" value="option1">1</label>
+        <label><input type="radio" name="optionPrice" value="option2">2</label>
+        <label><input type="radio" name="optionPrice" value="option3">3</label>
+      </div>
+      <div id="rtx3090">
+        <div>Выберите доп. комплектацию (Видеокарта RTX 3090 имеет 3 винта)</div>
+        <label><input type="checkbox" name="rtx3090" value="check1">С гарантией (12 мес.)</label>
+        <label><input type="checkbox" name="rtx3090" value="check2">С водяным охлождением</label>
+      </div>
+    </form>
+    <div class = "result" id="result"></div>
+  </body>
+</html>
