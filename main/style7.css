@@ -1,0 +1,21 @@
+img {
+    margin: 10px;
+    width: 500px;
+    height: 500;
+  }
+  .main {
+    background-color:#be88ce;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 30px 50px 10px 50px;
+  }
+  @media screen and (max-width: 480px) {
+    img {
+        margin: 3px;
+        width: 200;
+        height: 200;
+    }
+    .main {
+      padding: 30px 30px 10px 30px;
+    }
+  }
