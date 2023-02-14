@@ -15,19 +15,27 @@ void sum(double a[], int x, int y) {
 
 int main()
 {
+	setlocale(LC_ALL, "RUS");
 	const long int n = 4000000;
 	double *A = new double[n];
 	for (long int i = 0; i < n; i++)
 		A[i] = i;
+
 	auto t0 = high_resolution_clock::now();
 	thread sum1(sum, A, 0, 1000000);
-	thread sum2(sum, A, 1000001, 2000000);
-	thread sum3(sum, A, 2000001, 3000000);
-	thread sum4(sum, A, 3000001, 4000000);
+	thread sum2(sum, A, 1000000, 2000000);
+	thread sum3(sum, A, 2000000, 3000000);
+	thread sum4(sum, A, 3000000, 4000000);
 	sum1.join();
 	sum2.join();
 	sum3.join();
 	sum4.join();
 	auto t1 = high_resolution_clock::now();
 	cout << duration_cast<milliseconds>(t1 - t0).count();
+
+	//auto t0 = high_resolution_clock::now();
+	//thread sum1(sum, A, 0, 4000000);
+	//sum1.join();
+	//auto t1 = high_resolution_clock::now();
+	//cout << duration_cast<milliseconds>(t1 - t0).count();
 }
