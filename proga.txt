@@ -1,0 +1,33 @@
+#include <iostream>
+#include <chrono>
+#include <thread>
+using namespace std;
+using namespace std::chrono;
+
+// Есть массив чисел типа дабл, состоящий из 4 миллионов элементов. Написать программу в двух вариантах с 
+// один потоком и с 4 потоками которая находит сумму элементов массива. Сравнить результаты.
+
+void sum(double a[], int x, int y) {
+	long double sum = 0;
+	for (long int i = x; i < y; i++)
+		sum += a[i];
+}
+
+int main()
+{
+	const long int n = 4000000;
+	double *A = new double[n];
+	for (long int i = 0; i < n; i++)
+		A[i] = i;
+	auto t0 = high_resolution_clock::now();
+	thread sum1(sum, A, 0, 1000000);
+	thread sum2(sum, A, 1000001, 2000000);
+	thread sum3(sum, A, 2000001, 3000000);
+	thread sum4(sum, A, 3000001, 4000000);
+	sum1.join();
+	sum2.join();
+	sum3.join();
+	sum4.join();
+	auto t1 = high_resolution_clock::now();
+	cout << duration_cast<milliseconds>(t1 - t0).count();
+}
